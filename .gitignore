@@ -1,5 +1,6 @@
 # Distribution / packaging
 .Python
+.hypothesis/
 env/
 build/
 develop-eggs/
