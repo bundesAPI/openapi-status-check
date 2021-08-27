@@ -16,12 +16,13 @@ package:
     - node_modules/**
 
 functions:
-  get_joke:
+  openapi_check:      
     handler: handler.run
     events:
       - http:
           path: run
           method: get
+      - schedule: rate(5 minutes)
 
 plugins:
   - serverless-python-requirements
