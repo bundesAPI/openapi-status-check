@@ -5,11 +5,13 @@ import json
 
 def run(event, context):
 
-    projects = [{"name": "autobahn-api", "base_url": "https://verkehr.autobahn.de/o/autobahn"},
-                {"name": "dwd-api", "base_url": "https://dwd.api.proxy.bund.dev/v30" },
-                {"name": "travelwarning-api", "base_url": "https://www.auswaertiges-amt.de/opendata" },
-                {"name": "luftqualitaet-api", "base_url": "https://www.umweltbundesamt.de/api/air_data/v2" },
-                ]
+    projects = [
+        {"name": "autobahn-api", "base_url": "https://verkehr.autobahn.de/o/autobahn"},
+        {"name": "dwd-api", "base_url": "https://dwd.api.proxy.bund.dev/v30" },
+        {"name": "travelwarning-api", "base_url": "https://www.auswaertiges-amt.de/opendata" },
+        {"name": "risikogebiete-api", "base_url": "https://api.einreiseanmeldung.de/reisendenportal" },
+        {"name": "luftqualitaet-api", "base_url": "https://www.umweltbundesamt.de/api/air_data/v2" },
+    ]
     for project in projects:
         name = project["name"]
         description = """"""
