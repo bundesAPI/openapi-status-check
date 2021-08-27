@@ -18,6 +18,7 @@ package:
 functions:
   openapi_check:      
     handler: handler.run
+    timeout: 360
     events:
       - http:
           path: run
