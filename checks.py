@@ -27,7 +27,7 @@ class SchemaChecker:
                     # autobahn edge case that should be ok for every other api too
                     if check.example.path_parameters:
                         for param, value in check.example.path_parameters.items():
-                            if "%25" in value:
+                            if type(value) is str and "%25" in value:
                                 ignore_char_found = True
                     if not ignore_char_found:
                         if not status or status == "success":
