@@ -8,6 +8,7 @@ def run(event, context):
     projects = [{"name": "autobahn-api", "base_url": "https://verkehr.autobahn.de/o/autobahn"},
                 {"name": "dwd-api", "base_url": "https://dwd.api.proxy.bund.dev/v30" },
                 {"name": "travelwarning-api", "base_url": "https://www.auswaertiges-amt.de/opendata" },
+                {"name": "luftqualitaet-api", "base_url": "https://www.umweltbundesamt.de/api/air_data/v2" },
                 ]
     for project in projects:
         name = project["name"]
