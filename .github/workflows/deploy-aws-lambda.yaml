@@ -11,6 +11,8 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
+      - name: Install Poetry
+      - uses: snok/install-poetry@v1
       - uses: actions/checkout@master
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
