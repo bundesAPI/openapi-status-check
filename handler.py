@@ -161,7 +161,8 @@ def get_secret():
             # Deal with the exception here, and/or rethrow at your discretion.
             raise e
     else:
-       return get_secret_value_response['STATUSPAGE_PAGE_ID'], get_secret_value_response['STATUSPAGE_PAGE_SECRET']
+        print(get_secret_value_response)
+        return get_secret_value_response['STATUSPAGE_PAGE_ID'], get_secret_value_response['STATUSPAGE_PAGE_SECRET']
 
 
 #help(schema)
