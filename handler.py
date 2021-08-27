@@ -6,7 +6,9 @@ import json
 def run(event, context):
 
     projects = [{"name": "autobahn-api", "base_url": "https://verkehr.autobahn.de/o/autobahn"},
-                {"name": "dwd-api", "base_url": "https://dwd.api.proxy.bund.dev/v30" }]
+                {"name": "dwd-api", "base_url": "https://dwd.api.proxy.bund.dev/v30" },
+                {"name": "travelwarning-api", "base_url": "https://www.auswaertiges-amt.de/opendata" },
+                ]
     for project in projects:
         name = project["name"]
         description = """"""
