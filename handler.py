@@ -3,6 +3,7 @@ from schemathesis import checks
 from schemathesis.runner.events import AfterExecution
 import statuspageio
 import requests
+import json
 
 class StatuspageClient:
     def __init__(self):
@@ -162,8 +163,8 @@ def get_secret():
             # Deal with the exception here, and/or rethrow at your discretion.
             raise e
     else:
-        print(get_secret_value_response)
-        return get_secret_value_response['STATUSPAGE_PAGE_ID'], get_secret_value_response['STATUSPAGE_PAGE_SECRET']
+        secret = json.loads(get_secret_value_response['SecretString'])
+        return secret['STATUSPAGE_PAGE_ID'], secret['STATUSPAGE_PAGE_SECRET']
 
 
 #help(schema)
