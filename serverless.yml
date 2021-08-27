@@ -1,4 +1,4 @@
-service: blog-github-actions
+service: openapi-status-check
 provider:
   name: aws
   runtime: python3.9
