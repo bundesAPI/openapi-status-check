@@ -1,5 +1,6 @@
 import requests
 import json
+from utils import get_secret
 
 class StatuspageClient:
     def __init__(self):
