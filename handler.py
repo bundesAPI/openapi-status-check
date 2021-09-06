@@ -11,6 +11,7 @@ def run(event, context):
         {"name": "travelwarning-api", "base_url": "https://www.auswaertiges-amt.de/opendata" },
         {"name": "risikogebiete-api", "base_url": "https://api.einreiseanmeldung.de/reisendenportal" },
         {"name": "luftqualitaet-api", "base_url": "https://www.umweltbundesamt.de/api/air_data/v2" },
+        {"name": "smard-api", "base_url": "https://www.smard.de/app/chart_data" },
     ]
     for project in projects:
         name = project["name"]
