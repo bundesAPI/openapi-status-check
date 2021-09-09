@@ -16,7 +16,7 @@ def run(event, context):
         {"name": "polizei-brandenburg-api", "base_url": "https://polizei.brandenburg.de/ipa_api/" },
         {"name": "bundestag-api", "base_url": "https://www.bundestag.de/" },
         {"name": "mudab-api", "base_url": "https://geoportal.bafg.de/MUDABAnwendung/rest/BaseController/FilterElements" },
-        {"name": "smard-api", "base_url": "https://www.smard.de/app/chart_data" },
+        {"name": "bundesrat-api", "base_url": "https://www.bundesrat.de" },
         
     ]
     for project in projects:
