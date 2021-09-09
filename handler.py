@@ -13,6 +13,7 @@ def run(event, context):
         {"name": "luftqualitaet-api", "base_url": "https://www.umweltbundesamt.de/api/air_data/v2" },
         {"name": "smard-api", "base_url": "https://www.smard.de/app/chart_data" },
         {"name": "interpol-api", "base_url": "https://ws-public.interpol.int" },
+        {"name": "mudab-api", "base_url": "https://geoportal.bafg.de/MUDABAnwendung/rest/BaseController/FilterElements" },
     ]
     for project in projects:
         name = project["name"]
